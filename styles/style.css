@@ -13,8 +13,6 @@ body {
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
 }
 .container {
   max-width: 1140px;
@@ -23,6 +21,12 @@ body {
 
 .flex {
   display: flex;
+}
+
+.primary-color {
+  font-family: "Inter", sans-serif;
+  color: rgba(0, 0, 0, 50%);
+  font-size: 1.3rem;
 }
 
 /* Header section style */
@@ -66,9 +70,32 @@ body {
   font-size: medium;
 }
 
+/* banner related design */
+
+.banner {
+  align-items: flex-end;
+  margin-top: 120px;
+  height: auto;
+}
+.banner-title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: black;
+  margin: 0;
+}
+
+.freash-flower {
+  color: #e95a08;
+}
+
+.banner-description {
+  margin-bottom: 0px;
+}
+
 @media screen and (max-width: 576px) {
   .navber {
     width: 100%;
+    margin: 0 auto;
   }
 
   .nav-item-1,
@@ -78,5 +105,14 @@ body {
   }
   .nav-item-4 {
     font-size: 1.25rem;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+  }
+  .banner-content {
+    margin-top: 30px;
   }
 }
