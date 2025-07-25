@@ -1,8 +1,11 @@
 /* shared styles */
+
 body {
   background-color: #f5f8ff;
   margin: 0 auto;
   padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .noto-serif-font {
@@ -65,20 +68,25 @@ body {
 }
 
 .navber {
-  height: 75px;
+  /* height: 75px; */
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
+  /* margin-top: 10px; */
+  padding: 10px 20px;
+}
+
+.nav-items {
+  text-align: center;
+  gap: 20px;
 }
 .logo {
   width: 130px;
   height: auto;
 }
-
+/* 
 .nav-item {
-  margin-right: 50px;
-  margin-bottom: 0;
-}
+  /* margin-right: 50px;
+  margin-bottom: 0; */
 
 .nav-item-1 {
   font-weight: bold;
@@ -125,7 +133,8 @@ body {
 
 /* main section dsesign (OUR PLANTS) */
 .card {
-  width: 270px;
+  max-width: 270px;
+  width: 100%;
 }
 .our-plants {
   text-align: center;
@@ -167,7 +176,8 @@ body {
 .card-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  /* gap: 30px; */
+  max-width: 270px;
 }
 
 /* flowers and plants section related design */
@@ -181,6 +191,10 @@ body {
 
 .flowers-plants-img {
   position: relative;
+  max-width: 540px;
+  min-width: 350px;
+  width: 100%;
+  display: block;
 }
 .trusted-badge {
   width: 285px;
@@ -332,7 +346,8 @@ body {
 }
 
 .footer-content {
-  width: 350px;
+  max-width: 350px;
+  width: 100%;
 }
 
 .footer-link > li {
@@ -364,23 +379,19 @@ body {
 @media screen and (max-width: 576px) {
   /* nav item responsive */
   .navber {
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
   }
   .nav-items {
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: flex-end;
+    width: auto;
   }
-
   .nav-item-1,
   .nav-item-2,
   .nav-item-3,
   .trusted-badge {
     display: none;
-  }
-  .nav-item-4 {
-    font-size: 1.25rem;
   }
 
   /* banner section responsive */
@@ -403,8 +414,9 @@ body {
   }
   .card-container {
     grid-template-columns: repeat(2, 1fr);
-    gap: auto;
-    justify-content: center;
+    gap: 10px;
+    justify-items: center;
+    width: 100%;
   }
 
   /* flower and plants lover section responsive */
@@ -436,6 +448,7 @@ body {
   /* footer responsive */
   .footer {
     flex-direction: column;
+    padding-left: 20px;
   }
 
   .footer-link {
@@ -444,7 +457,7 @@ body {
 
   .follow-us > img {
     margin-left: 0px;
-    margin-right: 20px;
+    margin-right: 10px;
   }
   /* discount container responsive */
   .discount-container {
@@ -454,8 +467,7 @@ body {
 
   /* flower plants img */
   #flowers-plant-img {
-    display: block;
-    width: 100%;
-    margin: o auto;
+    max-width: 100%;
+    height: auto;
   }
 }
