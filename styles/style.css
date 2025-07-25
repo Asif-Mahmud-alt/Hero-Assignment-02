@@ -362,9 +362,15 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+  /* nav item responsive */
   .navber {
     width: 100%;
     margin: 0 auto;
+    margin-top: 10px;
+  }
+  .nav-items {
+    flex-direction: column;
+    justify-content: flex-end;
   }
 
   .nav-item-1,
@@ -376,6 +382,8 @@ body {
   .nav-item-4 {
     font-size: 1.25rem;
   }
+
+  /* banner section responsive */
   .banner {
     flex-direction: column-reverse;
     justify-content: center;
@@ -385,7 +393,7 @@ body {
   .banner-content {
     margin-top: 30px;
   }
-
+  /* Our Plants section responsive */
   .plants {
     padding-left: 10px;
   }
@@ -399,11 +407,30 @@ body {
     justify-content: center;
   }
 
+  /* flower and plants lover section responsive */
   .flowers-plants {
     flex-direction: column;
     /* text-align: center; */
     padding: 10px 10px;
     /* justify-content: center; */
+  }
+
+  /* colourful bounch section responsive */
+
+  .colorful-bounch {
+    width: 100%;
+    margin-top: 100px auto;
+  }
+  .input,
+  .input-email,
+  .submit {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+  }
+  .submit {
+    padding: 20px 20px;
   }
 
   /* footer responsive */
@@ -419,8 +446,16 @@ body {
     margin-left: 0px;
     margin-right: 20px;
   }
-
+  /* discount container responsive */
   .discount-container {
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(3, 200px);
+  }
+
+  /* flower plants img */
+  #flowers-plant-img {
+    display: block;
+    width: 100%;
+    margin: o auto;
   }
 }
