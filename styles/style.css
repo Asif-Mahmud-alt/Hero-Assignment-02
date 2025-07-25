@@ -218,52 +218,68 @@ body {
 
 /* discount section related designs */
 
-.discount {
+.discount-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 300px 650px;
+  grid-template-rows: repeat(2, 200px);
+  justify-content: center;
+  margin-top: 120px;
   gap: 20px;
 }
-
-.discount-1 {
-  background-image: url("../assets/deal-bloom.png");
-  background-repeat: no-repeat;
-  width: 370px;
-  height: 200px;
+#discount-1 {
+  background-image: url(../assets/deal-bloom.png);
+  background-color: rgba(0, 0, 0, 40%);
   border-radius: 14px;
-  text-align: center;
-  padding-top: 50px;
 }
-
-.discount-2 {
-  background-image: url("../assets/deal-ana.png");
-  background-repeat: no-repeat;
-  width: 370px;
-  height: 200px;
+#discount-2 {
+  background-image: url(../assets/deal-zabo.png);
+  background-color: rgba(0, 0, 0, 40%);
   border-radius: 14px;
-  text-align: center;
-  padding-top: 50px;
 }
-.discount-3 {
-  background-image: url("../assets/deal-zabo.png");
-  background-repeat: no-repeat;
-  width: 370px;
-  height: 200px;
-  border-radius: 25px;
+#discount-3 {
+  background-image: url(../assets/deal-ana.png);
+  background-color: rgba(0, 0, 0, 0.493);
+  border-radius: 14px;
+}
+
+#discount-2 {
+  grid-row: span 2;
+}
+
+.discount-content {
   text-align: center;
   padding-top: 50px;
 }
 
-.discount-heading {
+.discount-2-content {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.discount-title {
+  font-family: "Noto Serif", serif;
+  font-weight: bold;
   font-size: 1.25rem;
+  color: white;
+}
+
+.discount-2-title {
+  font-family: "Noto Serif", serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: white;
 }
 
 .discount-link {
   font-family: "Inter", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   color: white;
-  font-size: 1rem;
 }
-
+#discount-2-link {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: white;
+}
 /* join colorful section design */
 
 .colorful-bounch {
@@ -273,7 +289,7 @@ body {
   background-color: rgba(60, 51, 79, 40%);
   align-items: center;
   text-align: center;
-  margin-top: 150px;
+  margin-top: 120px;
   max-width: 1440px;
   width: 100%;
 }
@@ -402,5 +418,9 @@ body {
   .follow-us > img {
     margin-left: 0px;
     margin-right: 20px;
+  }
+
+  .discount-container {
+    grid-template-rows: repeat(3, 1fr);
   }
 }
