@@ -1,6 +1,8 @@
 /* shared styles */
 body {
   background-color: #f5f8ff;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .noto-serif-font {
@@ -36,6 +38,21 @@ body {
   font-size: 1.3rem;
 }
 
+.btn-primary {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: white;
+  background-color: #e95a08;
+  padding: 20px 80px;
+  border: none;
+}
+
+.shared-heading-white {
+  font-family: "Noto Serif", serif;
+  font-weight: bold;
+  color: white;
+}
+
 /* Header section style */
 
 .nav-items > li {
@@ -51,6 +68,7 @@ body {
   height: 75px;
   justify-content: space-between;
   align-items: center;
+  margin-top: 10px;
 }
 .logo {
   width: 130px;
@@ -141,15 +159,6 @@ body {
   margin-top: 0px;
 }
 
-.btn-primary {
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  color: white;
-  background-color: #e95a08;
-  padding: 20px 80px;
-  border: none;
-}
-
 .card .card-detail {
   text-align: center;
 }
@@ -206,6 +215,98 @@ body {
 #deals-h2-color {
   color: #e95a08;
 }
+
+/* discount section related designs */
+
+.discount {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.discount-1 {
+  background-image: url("../assets/deal-bloom.png");
+  background-repeat: no-repeat;
+  width: 370px;
+  height: 200px;
+  border-radius: 14px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.discount-2 {
+  background-image: url("../assets/deal-ana.png");
+  background-repeat: no-repeat;
+  width: 370px;
+  height: 200px;
+  border-radius: 14px;
+  text-align: center;
+  padding-top: 50px;
+}
+.discount-3 {
+  background-image: url("../assets/deal-zabo.png");
+  background-repeat: no-repeat;
+  width: 370px;
+  height: 200px;
+  border-radius: 25px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.discount-heading {
+  font-size: 1.25rem;
+}
+
+.discount-link {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: white;
+  font-size: 1rem;
+}
+
+/* join colorful section design */
+
+.colorful-bounch {
+  background-image: url(../assets/news-letter-bg.png);
+  background-repeat: no-repeat;
+  height: 500px;
+  background-color: rgba(60, 51, 79, 40%);
+  align-items: center;
+  text-align: center;
+  margin-top: 150px;
+  max-width: 1440px;
+  width: 100%;
+}
+.section-content {
+  padding-top: 150px;
+}
+
+.colorful-bounch-title {
+  font-size: 50px;
+}
+
+.input {
+  display: inline-block;
+}
+
+.input-email {
+  /* height: 50px; */
+  width: 600px;
+  padding: 20px;
+  border: none;
+}
+
+.submit {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: white;
+  background-color: #e95a08;
+  padding: 20px 55px;
+  border: none;
+  margin-left: -4px;
+}
+
+/* footer section design */
 
 @media screen and (max-width: 576px) {
   .navber {
