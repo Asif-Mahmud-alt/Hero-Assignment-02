@@ -1,10 +1,16 @@
 /* shared styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
 
 body {
   background-color: #f5f8ff;
   margin: 0 auto;
   padding: 0;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   box-sizing: border-box;
 }
 
@@ -47,7 +53,11 @@ body {
   color: white;
   background-color: #e95a08;
   padding: 20px 80px;
+  /* margin-top: 10px; */
+
   border: none;
+  width: auto;
+  display: inline-block;
 }
 
 .shared-heading-white {
@@ -132,10 +142,7 @@ body {
 }
 
 /* main section dsesign (OUR PLANTS) */
-.card {
-  max-width: 270px;
-  width: 100%;
-}
+
 .our-plants {
   text-align: center;
   gap: 20px;
@@ -152,10 +159,30 @@ body {
   color: black;
 }
 
+/* card design */
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.card {
+  overflow-x: hidden;
+  max-width: 270px;
+  width: 100%;
+}
+
+.card-img {
+  max-width: 270px;
+  width: 100%;
+  height: auto;
+}
+
 .card-name {
   color: #111111;
   font-size: 1.3rem;
-  font-weight: medium;
+  font-weight: 500;
   font-family: "Inter", sans-serif;
   margin-bottom: 10px;
 }
@@ -171,15 +198,6 @@ body {
 .card .card-detail {
   text-align: center;
 }
-/* card design */
-
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  /* gap: 30px; */
-  max-width: 270px;
-}
-
 /* flowers and plants section related design */
 
 .flowers-plants {
@@ -413,6 +431,7 @@ body {
     align-items: center;
   }
   .card-container {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     justify-items: center;
@@ -456,6 +475,7 @@ body {
   }
 
   .follow-us > img {
+    margin-top: 40px;
     margin-left: 0px;
     margin-right: 10px;
   }
