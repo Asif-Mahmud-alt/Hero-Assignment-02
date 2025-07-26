@@ -3,14 +3,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 body {
   background-color: #f5f8ff;
   margin: 0 auto;
   padding: 0;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   box-sizing: border-box;
 }
 
@@ -212,7 +212,11 @@ body {
   max-width: 540px;
   min-width: 350px;
   width: 100%;
+}
+
+.flowers-plant-img {
   display: block;
+  height: auto;
 }
 .trusted-badge {
   width: 285px;
@@ -326,7 +330,7 @@ body {
   width: 100%;
 }
 .section-content {
-  padding-top: 100px;
+  padding-top: 180px;
 }
 
 .colorful-bounch-title {
@@ -335,6 +339,7 @@ body {
 
 .input {
   display: inline-block;
+  margin-top: 20px;
 }
 
 .input-email {
